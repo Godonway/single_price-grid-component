@@ -43,9 +43,7 @@ ul{
   align-items:center;
 }
 
-.container{
-  height:100vh;
-    }
+
 
 
 article.community_services{
@@ -139,6 +137,9 @@ section.service_benefits{
   }
 
   @media(min-width:900px){
+    .container{
+  height:100vh;
+    }
     article.grid{
       display:grid;
       grid-template-columns:repeat(2,370px);
