@@ -45,13 +45,13 @@ ul{
 
 .container{
   height:100vh;
-  justify-content:center;
-  }
+    }
 
 
 article.community_services{
   max-width:360px;
   border-radius:0.4rem;
+  margin:3rem auto;
   overflow:hidden;
 }
 
