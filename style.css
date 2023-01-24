@@ -1,0 +1,163 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+
+/* font-family: 'Karla', sans-serif; */
+
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+:root{
+
+  /* ### Primary */
+
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+
+/* ### Neutral */
+
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+html{
+  background-color:var(--Light-Gray);
+}
+
+body{
+  font-family:'Karla', sans-serif;
+  font-size:16px;
+}
+
+ul{
+  list-style:none;
+}
+
+.flex{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.container{
+  height:100vh;
+  justify-content:center;
+  }
+
+
+article.community_services{
+  max-width:360px;
+  border-radius:0.4rem;
+  overflow:hidden;
+}
+
+section.service_brief_info,
+section.about_subscrition,
+section.service_benefits{
+  padding-block:1.5rem;
+  padding-inline:1.2rem 1.5rem;
+}
+
+.service_brief_info{
+  background-color:white;
+}
+.service_brief_info h2,
+.service_brief_info h3{
+  margin-bottom:1.5rem;
+}
+.service_brief_info h2{
+ color:var(--Cyan);
+ }
+
+.service_brief_info h3{
+  color:var(--Bright-Yellow);
+ }
+
+.service_brief_info p{
+  color:var(--Grayish-Blue);
+  line-height:1.7;
+}
+
+.about_subscrition,
+.service_benefits{
+  background-color:var(--Cyan);
+  }
+
+.about_subscrition h3,
+.about_subscrition span{
+  color:white;
+  }
+
+.about_subscrition p,
+ .about_subscrition.subs_price p,
+ .about_subscrition > button{
+  color:var(--Light-Gray);
+   }
+
+
+.subs_price{
+  width:50%;
+  margin-block:1rem 0.5rem;
+}
+
+.subs_price span{
+  font-size:2rem;
+  font-weight:700;
+}
+
+.about_subscrition > button{
+  width:100%;
+  font-size:1rem;
+  background-color:var(--Bright-Yellow);
+
+  padding-block:1rem;
+  margin-block:2rem 0.5rem;
+
+  border:none;
+  border-radius:0.5rem;
+  box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.35);
+
+  cursor:pointer;
+}
+
+.service_benefits{
+  background-color:hsl(179, 64%, 40%);;
+}
+.service_benefits h3{
+  color:white;
+  margin-block:0.5rem 1rem;
+}
+.service_benefits ul>li{
+  color:var(--Light-Gray);
+}
+.service_benefits ul> li + li{
+  line-height:1.5;
+  }
+
+  @media(min-width:900px){
+    article.grid{
+      display:grid;
+      grid-template-columns:repeat(2,370px);
+      grid-template-rows:auto;
+      max-width:max-content;
+      
+    }
+  
+    .service_brief_info{
+      grid-row:1/1;
+      grid-column:1/3;
+    } 
+    section.service_benefits,
+    section.service_brief_info,
+    section.about_subscrition{
+      padding:3rem;
+          }
+
+    .subs_price{
+      width:55%;
+    }
+  }
